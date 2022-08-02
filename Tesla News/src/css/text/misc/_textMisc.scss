@@ -1,0 +1,30 @@
+$pri-color: #eeeeee;
+$sec-color: #bbbbbb;
+$nat-color: #000000;
+$text-black: #000;
+$text-white: #fff;
+$text-grey: #BDC1C6;
+$font-main: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$font-sec: 'Roboto Mono', monospace;
+$font-creative: 'Stick No Bills', sans-serif;
+.fe-italic-ligth {
+    color: $text-grey;
+    font-size: 0.8rem;
+    font-family: $font-main;
+    font-weight: 400;
+    font-style: italic;
+}
+.fe-italic-medium {
+    color: $text-grey;
+    font-size: 1rem;
+    font-family: $font-main;
+    font-weight: 400;
+    font-style: italic;
+}
+.fe-italic-bold {
+    color: $text-grey;
+    font-size: 1.1rem;
+    font-family: $font-main;
+    font-weight: 400;
+    font-style: italic;
+}

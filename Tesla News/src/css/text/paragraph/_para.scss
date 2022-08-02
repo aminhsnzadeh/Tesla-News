@@ -1,0 +1,35 @@
+$pri-color: #eeeeee;
+$sec-color: #bbbbbb;
+$nat-color: #000000;
+$text-black: #000;
+$text-white: #fff;
+$text-grey: #BDC1C6;
+$font-main: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$font-sec: 'Roboto Mono', monospace;
+$font-creative: 'Stick No Bills', sans-serif;
+.para-light {
+    font-size: 0.9rem;
+    color: $text-grey;
+    font-family: $font-sec;
+    font-weight: 300;
+}
+.para-medium {
+    font-size: 1rem;
+    color: $text-grey;
+    font-family: $font-sec;
+    font-weight: 400;
+}
+.para-bold {
+    font-size: 1.1rem;
+    color: $text-grey;
+    font-family: $font-sec;
+    font-weight: 400;
+}
+.para-news {
+    font-size: 1rem;
+    color: $text-white;
+    font-family: $font-sec;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}

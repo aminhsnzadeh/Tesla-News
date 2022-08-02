@@ -1,0 +1,47 @@
+$pri-color: #eeeeee;
+$sec-color: #bbbbbb;
+$nat-color: #000000;
+$text-black: #000;
+$text-white: #fff;
+$text-grey: #BDC1C6;
+$font-main: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$font-sec: 'Roboto Mono', monospace;
+$font-creative: 'Stick No Bills', sans-serif;
+#lastest {
+    padding: 4rem 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    transition: 0.4s;
+    h2 {
+        margin: 2rem 0;
+    }
+    section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+#all-news {
+    padding: 4rem 0;
+    max-width: 1400px;
+    transition: 0.4s;
+    margin: 0 auto;
+    > section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        > p {
+            margin-top: 1rem;
+            text-align: center;
+        }
+        .news-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 400px);
+            grid-template-rows: auto;
+            grid-gap: 1rem;
+            justify-items: center;
+            margin-top: 3rem;
+        }
+    }
+}

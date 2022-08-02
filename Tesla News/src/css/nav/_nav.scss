@@ -1,0 +1,106 @@
+$pri-color: #eeeeee;
+$sec-color: #bbbbbb;
+$nat-color: #000000;
+$text-black: #000;
+$text-white: #fff;
+$text-grey: #BDC1C6;
+$font-main: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$font-sec: 'Roboto Mono', monospace;
+$font-creative: 'Stick No Bills', sans-serif;
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    margin-bottom: -90px;
+    z-index: 999;
+    position: relative;
+    > figure {
+        width: 20%;
+        height: 100%;
+        @extend .center;
+        img {
+            width: 50%;
+            height: 50%;
+            object-fit: cover;
+            filter: brightness(0) invert(1);
+        }
+    }
+    .nav {
+        &.desktop-nav {
+            width: 60%;
+            height: 100%;
+            @extend .center;
+            ul {
+                @extend .center;
+                li {
+                    padding: 0 0.75rem;
+                    color: $text-white;
+                    cursor: pointer;
+                }
+            }
+        }
+        &.mobile-nav {
+            width: 80%;
+            height: 100%;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+            span {
+                position: absolute;
+                z-index: 9999;
+                top: 50%;
+                right: 0;
+                font-size: 2.5rem;
+                transform: translateY(-50%);
+                color: $text-white;
+                cursor: pointer;
+            }
+            ul {
+                position: fixed;
+                width: 300px;
+                height: 100%;
+                right: 0;
+                top: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: #000000b9;
+                color: $text-white;
+                transform: translateX(100%);
+                transition: 0.4s;
+                li {
+                    padding: 0.5rem 0;
+                    font-size: 1.1rem;
+                    font-family: $font-sec;
+                }
+            }
+
+        }
+    }
+    > div {
+        width: 20%;
+        height: 100%;
+        @extend .center;
+        h2 {
+            text-align: center;
+            color: $text-white !important;
+        }
+    }
+}
+.open-nav {
+    transform: translateX(0);
+}
+.nav-active {
+    transform: translateX(0) !important;
+}
+
